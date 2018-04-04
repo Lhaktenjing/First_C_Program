@@ -2,6 +2,10 @@
 int main()
 {
    // printf() displays the string inside quotation
-   printf("Hello, World!");
+  FILE *ptr;
+  ptr = fopen("sherpal.txt","w");
+  fprintf(ptr, "This lab was confusing");
+  fclose(ptr);  
+ printf("Hello, World!");
    return 0;
 }
